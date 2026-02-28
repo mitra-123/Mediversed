@@ -1,1 +1,111 @@
+.main-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  border: 1px solid #ffffff;
+  overflow: hidden;
+  border-radius: 2px;
+  background: transparent; /* Set background to transparent */
+  border: none; /* Remove any border */
+  padding: 0; /* Remove padding */
+  box-shadow: none; /* Remove shadow if any */
+}
+.modal-content {
+  border: 2px solid #2d3648; /* Set your desired border color */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  padding: 20px; /* Adjusts padding inside the border */
+  background-color: rgba(255, 255, 255, 0.9); /* Adds a semi-transparent background for better visibility */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+
+/* Background for the entire page */
+body {
+  background-image: url('./assets/signin.png'); /* Path to your image */
+  background-size: cover; /* Ensure the image covers the viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-attachment: fixed; /* Keep background fixed on scroll */
+  margin: 0;
+  padding: 0;
+}
+
+
+.group {
+  position: absolute;
+  top: 45px;
+  left: 175px;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: Jost, sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.text {
+  display: block;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.box-8 {
+  margin-top: 80px;
+}
+
+.mb-3, .d-flex {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.wrapper-6 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: #2d3648;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="tel"] {
+  padding-left: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+  font-size: 16px;
+}
+
+input[type="date"] {
+  font-size: 16px;
+}
