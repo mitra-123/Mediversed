@@ -1,1 +1,202 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
 
+    color-scheme: light;
+    color: #213547;
+    background-color: #ffffff;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-weight: 500;
+    color: #fff;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #eee;
+    transition: all 200ms;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    place-items: stretch;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+.navigation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: #bbb;
+    height: 3em;
+    padding: 0.5em;
+    gap: 25px;
+
+    > * {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    > .spacer {
+        flex-grow: 3;
+    }
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.compact{
+    gap: 5px;
+}
+
+.stretch-items {
+    align-items: stretch;
+}
+
+.center-items {
+    align-items: center;
+}
+
+.grow-2 {
+    flex-grow: 2;
+}
+
+.grow-3 {
+    flex-grow: 3;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    margin: 35px;
+    background: rgba(238, 238, 238, 0.419);
+    backdrop-filter: blur(8px); /* Applies the blur effect */
+    padding: 25px;
+    border-radius: 10px;
+
+    & + section {
+        margin-bottom: 0;
+    }
+}
+
+input[type=text], input[type=password] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+
+    &:hover {
+        background-color: #005bb5; /* Change background color on hover */
+        transform: scale(1.05); /* Slightly enlarge the button */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    }
+
+    &:focus, &:focus-visible {
+        outline: none; /* Remove the default focus outline */
+        border: 2px solid #005bb5; /* Add a border on focus */
+    }
+}
+
+ol {
+    list-style: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.navitem {
+    padding: 10px;
+    transition: all 200ms;
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+
+    > * {
+        flex-grow: 2;
+    }
+
+    &:hover {
+        background: #ccc;
+    }
+
+    & + li.navitem {
+        border-top: 1px solid #ccc;
+    }
+}
+
+.nurse-list-item:hover {
+    transform: scale(1.52);
+    background-color: rgba(200, 200, 200, 0.5) !important;
+}
+
+@keyframes popup-transition {
+    from {
+        transform: perspective(50rem) rotateY(180deg);
+    }
+
+    to {
+        transform: perspective(50rem) rotateY(0deg);
+    }
+}
+
+.popup-transition-in {
+    animation-duration: 1s;
+    animation-name: popup-transition;
+}
+
+.popup-transition-out {
+    animation-duration: 1s;
+    animation-name: popup-transition;
+    animation-direction: reverse;
+}
+
+.hidden {
+    display: none;
+}
+
+#patients .rounded {
+    border-radius: 50px !important;
+}
+
+#patients button {
+    border: none;
+    box-shadow: 0px 3px 10px #aaa;
+    border-radius: 20px;
+}
